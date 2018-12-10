@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title> Times Table </title>
+    <script>
+    /* Input:
+     * Processing: Calculate the five times table.
+     * Output: Times tables up to 12.
+     */
+
+     function timesTable() {
+       var multiplier = 1
+       var multiplicant = 5
+       var output = ""
+
+       while (multiplier <=12) {
+         output += multiplicant + " x " + multiplier + " = " +
+            (multiplicant*multiplier) + "<br>";
+         multiplier++;
+       }
+
+       document.getElementById('outputDiv').innerHTML = output;
+     }
+    </script>
+  </head>
+
+  <body>
+    Learn the 5 times table!
+    <button type="button" onclick="timesTable()">Click</button> <br>
+    <div id="outputDiv"></div>
+  </body>
+</html>
